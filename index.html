@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Kit Casa Organizada · VidaFlor</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#B8607A">
+  <meta name="description" content="Cronograma, rotina, refeições, compras, finanças, manutenção e hábitos da casa — editável e do seu jeito.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Casa Organizada">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="icons/favicon-64.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="bar legacy no-print">
+    🖨️ <span>Para PDF: <b>Ctrl/Cmd + P → Salvar como PDF</b> · margens <b>"Nenhuma"</b> · fundo gráfico
+      <b>ligado</b></span>
+    <button onclick="window.print()">Imprimir / Salvar PDF</button>
+  </div>
+
+  <div class="sheet">
+
+    <!-- ░░░ PÁGINA 1 — CAPA ░░░ -->
+    <section class="page cover">
+      <div class="brandline"></div>
+      <svg class="sprig" width="58" height="58" viewBox="0 0 58 58" fill="none">
+        <path d="M29 52V20" stroke="#B8607A" stroke-width="1.6" stroke-linecap="round" />
+        <path d="M29 30C24 28 18 30 15 35C21 37 27 35 29 30Z" fill="#E8B0BE" />
+        <path d="M29 30C34 28 40 30 43 35C37 37 31 35 29 30Z" fill="#E89472" opacity=".85" />
+        <path d="M29 22C26 18 27 12 31 9C33 14 32 19 29 22Z" fill="#D9B872" />
+        <circle cx="29" cy="20" r="3.4" fill="#B8607A" />
+      </svg>
+      <div class="eyebrow">VidaFlor · Com Propósito</div>
+      <h1>Kit Casa <em>Organizada</em></h1>
+      <p class="sub">O cronograma e a rotina que transformam a casa em um lar que funciona — sem você precisar lembrar
+        de tudo.</p>
+      <div class="rule"></div>
+      <div class="index">
+        <div class="it"><div class="n">1</div><div class="t">Rotina do dia<span>manhã, tarde e noite — mais os essenciais</span></div></div>
+        <div class="it"><div class="n">2</div><div class="t">Cronograma semanal de limpeza<span>cada dia com tarefas e tempo estimado</span></div></div>
+        <div class="it"><div class="n">3</div><div class="t">Personalize a sua semana<span>grade em branco pra montar do seu jeito</span></div></div>
+        <div class="it"><div class="n">4</div><div class="t">Planejamento de refeições<span>café, almoço e jantar para a semana toda</span></div></div>
+        <div class="it"><div class="n">5</div><div class="t">Lista de compras<span>por categoria — hortifrúti, carnes, mercearia e mais</span></div></div>
+        <div class="it"><div class="n">6</div><div class="t">Controle financeiro da casa<span>entradas, fixas, variáveis e saldo do mês</span></div></div>
+        <div class="it"><div class="n">7</div><div class="t">Checklist mensal de manutenção<span>as tarefas que todo mundo adia</span></div></div>
+        <div class="it"><div class="n">8</div><div class="t">Destralhe &amp; desapego<span>decida o destino de cada item parado</span></div></div>
+        <div class="it"><div class="n">9</div><div class="t">Contatos e informações da casa<span>serviços, emergências e documentos</span></div></div>
+        <div class="it"><div class="n">10</div><div class="t">Tracker de hábitos da família<span>constância semana a semana</span></div></div>
+      </div>
+      <div class="stamp">🌸 imprima · pendure · floresça</div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 kit casa organizada</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 2 — CRONOGRAMA ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 2</div>
+        <h2>Cronograma semanal de limpeza</h2>
+        <p>Distribuído pra casa nunca acumular. Marque cada tarefa conforme faz — o número à direita é o tempo estimado.</p>
+      </div>
+
+      <div class="lista-semanal">
+        <div class="ls-head">Lista de organização de limpeza semanal — sugestões</div>
+        <div class="ls-grid">
+          <div class="ls-row"><div class="ls-day">Segunda</div><div class="ls-task">Limpar geladeira · 20 min</div></div>
+          <div class="ls-row"><div class="ls-day">Terça</div><div class="ls-task">Varrer teto / teias · 15 min</div></div>
+          <div class="ls-row"><div class="ls-day">Quarta</div><div class="ls-task">Trocar roupas de cama e banho · 20 min</div></div>
+          <div class="ls-row"><div class="ls-day">Quinta</div><div class="ls-task">Lavar tapetes · 25 min</div></div>
+          <div class="ls-row"><div class="ls-day">Sexta</div><div class="ls-task">Trocar esponja de lavar louça · 5 min</div></div>
+          <div class="ls-row"><div class="ls-day">Sábado</div><div class="ls-task">Limpar lava-louças / pia · 20 min</div></div>
+          <div class="ls-row"><div class="ls-day">Domingo</div><div class="ls-task">Dia leve · descanso</div></div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="dh"><div class="nm">Segunda<small>SEG</small></div><div class="pill">50 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🧊</div><div class="tx">Limpar geladeira</div><div class="min">20 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">🌿</div><div class="tx">Lavar quintal</div><div class="min">30 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day soft">
+        <div class="dh"><div class="nm">Terça<small>TER</small></div><div class="pill">30 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🧹</div><div class="tx">Varrer teto / teias</div><div class="min">15 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">👟</div><div class="tx">Limpar calçados</div><div class="min">15 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="dh"><div class="nm">Quarta<small>QUA</small></div><div class="pill">50 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🧺</div><div class="tx">Trocar roupas de cama e banho</div><div class="min">20 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">🚿</div><div class="tx">Faxina banheiro</div><div class="min">30 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day soft">
+        <div class="dh"><div class="nm">Quinta<small>QUI</small></div><div class="pill">70 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🪣</div><div class="tx">Lavar tapetes</div><div class="min">25 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">👔</div><div class="tx">Passar roupa</div><div class="min">45 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="dh"><div class="nm">Sexta<small>SEX</small></div><div class="pill">35 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🧽</div><div class="tx">Trocar esponja de lavar louça</div><div class="min">5 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">🌿</div><div class="tx">Lavar quintal</div><div class="min">30 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day soft">
+        <div class="dh"><div class="nm">Sábado<small>SÁB</small></div><div class="pill">50 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🚿</div><div class="tx">Limpar lava-louças / pia</div><div class="min">20 min</div></div>
+            <div class="task"><div class="cbx"></div><div class="em">🚿</div><div class="tx">Faxina banheiro</div><div class="min">30 min</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="dh"><div class="nm">Domingo<small>DOM · dia leve</small></div><div class="pill">20 min</div></div>
+        <div class="day-2col">
+          <div class="day-left">
+            <div class="task"><div class="cbx"></div><div class="em">🌸</div><div class="tx">Descanso e renovação</div><div class="min">—</div></div>
+          </div>
+          <div class="day-right">
+            <div class="day-line"><div class="cbx"></div><div class="dl"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faxina-tip">
+        <div class="ft-title">🏠 Dica de Faxina Mensal</div>
+        <p>Divida sua casa em 4 áreas (cozinha, sala, áreas molhadas e quartos). Faça por área: a cada semana, uma área recebe faxina a fundo — na 1ª semana, só os quartos; na 2ª, só a cozinha. Assim tudo se mantém em ordem e você fica mais leve.</p>
+      </div>
+
+      <div class="deleg-note">
+        <strong>💡 Sugestão:</strong> Se você tem alguém que te ajuda na limpeza, mas a pessoa acaba deixando o que te incomoda sem fazer, use este espaço para listar as prioridades do dia ou da semana. Deixe visível na geladeira ou repasse para ela. Assim, o que mais te incomoda será finalmente resolvido!
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 2 · limpeza</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA CRONOGRAMA EM BRANCO ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 2 · Em Branco</div>
+        <h2>Cronograma semanal de limpeza</h2>
+        <p>Monte sua própria semana. Distribua as tarefas pelos dias do jeito que funciona pra sua casa.</p>
+      </div>
+
+      <div class="metas-semana">
+        <div class="ms-title">🎯 Metas da semana</div>
+        <div class="ms-line"></div>
+        <div class="ms-line"></div>
+        <div class="ms-line"></div>
+        <div class="ms-line"></div>
+      </div>
+
+      <div class="day">
+        <div class="dh"><div class="nm">Segunda<small>SEG</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day soft">
+        <div class="dh"><div class="nm">Terça<small>TER</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day">
+        <div class="dh"><div class="nm">Quarta<small>QUA</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day soft">
+        <div class="dh"><div class="nm">Quinta<small>QUI</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day">
+        <div class="dh"><div class="nm">Sexta<small>SEX</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day soft">
+        <div class="dh"><div class="nm">Sábado<small>SÁB</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+      <div class="day">
+        <div class="dh"><div class="nm">Domingo<small>DOM · dia leve</small></div><div class="pill">__ min</div></div>
+        <div class="task"><div class="cbx"></div><div class="em"></div><div class="tx"></div><div class="min"></div></div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 2 · limpeza</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA BÔNUS — BASE DE TODO DIA ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;">
+      <div class="brandline"></div>
+      <div class="head">
+        <h2>Base de <em style="color:var(--sage)">todo dia</em></h2>
+        <p>As tarefas que mantêm a casa funcionando — independente do dia ou da energia disponível. Marque cada uma conforme faz.</p>
+      </div>
+
+      <div class="base-list">
+        <div class="base-item"><div class="cbx"></div><div class="bem">🍽️</div><div class="btx">Lavar a louça</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">🛏️</div><div class="btx">Arrumar as camas</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">💧</div><div class="btx">Beber água ao longo do dia</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">🙏</div><div class="btx">Oração / devocional</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">🥗</div><div class="btx">Preparar o almoço</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">🗑️</div><div class="btx">Tirar os lixos</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">🧹</div><div class="btx">Varrer / passar a vassoura</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">💊</div><div class="btx">Tomar medicamentos</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">📚</div><div class="btx">Ler com os filhos</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">👨‍👩‍👧</div><div class="btx">Momento em família</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">🌙</div><div class="btx">Preparar o dia seguinte</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem">🧹</div><div class="btx">Passar pano no chão</div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem">👕</div><div class="btx">Levar roupas para lavanderia</div></div>
+      </div>
+
+      <div style="flex:1;margin-top:10px;display:flex;flex-direction:column;gap:4px;">
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 bônus · base de todo dia</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA BÔNUS — BASE DE TODO DIA (EM BRANCO) ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Bônus · Em Branco</div>
+        <h2>Base de <em style="color:var(--sage)">todo dia</em></h2>
+        <p>Escreva aqui as suas tarefas essenciais do dia — do seu jeito, na sua ordem. Marque cada uma conforme faz.</p>
+      </div>
+
+      <div class="base-list">
+        <div class="base-item"><div class="cbx"></div><div class="bem">🛏️</div><div class="btx">Arrumar as camas</div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item alt"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+        <div class="base-item"><div class="cbx"></div><div class="bem"></div><div class="btx"></div></div>
+      </div>
+
+      <div class="base-blanks">
+        <div class="base-blank"><div class="cbx"></div><div class="bbl"></div></div>
+        <div class="base-blank"><div class="cbx"></div><div class="bbl"></div></div>
+        <div class="base-blank"><div class="cbx"></div><div class="bbl"></div></div>
+        <div class="base-blank"><div class="cbx"></div><div class="bbl"></div></div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 bônus · base de todo dia</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 3 — ROTINA DO DIA ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 1</div>
+        <h2>Rotina do dia</h2>
+        <p>Um modelo sugerido pra dar ritmo ao dia. Adapte os horários ao seu — as linhas em branco são pra você completar.</p>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">☀️</span><h3>Manhã</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time" value="06:30"><input class="tx-in" type="text" value="Oração e leitura"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="07:00"><input class="tx-in" type="text" value="Exercício físico"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="07:45"><input class="tx-in" type="text" value="Café da manhã em família"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="08:00"><input class="tx-in" type="text" value="Tomar medicamentos"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="08:30"><input class="tx-in" type="text" value="Revisar a agenda do dia"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="09:00"><input class="tx-in" type="text" value="Varrer casa"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="09:20"><input class="tx-in" type="text" value="Tirar os lixos"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">🌤️</span><h3>Tarde</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time" value="12:00"><input class="tx-in" type="text" value="Almoço"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="13:00"><input class="tx-in" type="text" value="Descanso (20 min)"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="14:00"><input class="tx-in" type="text" value="Lavar as louças"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="15:00"><input class="tx-in" type="text" value="Estender as roupas"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="17:00"><input class="tx-in" type="text" value="Ajudar com a lição de casa"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">🌙</span><h3>Noite</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time" value="19:00"><input class="tx-in" type="text" value="Jantar em família"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="20:00"><input class="tx-in" type="text" value="Tempo de qualidade"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="21:00"><input class="tx-in" type="text" value="Leitura pessoal"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="21:30"><input class="tx-in" type="text" value="Deixar roupas já na máquina (só ligar de manhã)"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="21:45"><input class="tx-in" type="text" value="Trocar água dos pets e verificar se tem ração"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time" value="22:00"><input class="tx-in" type="text" value="Gratidão do dia"><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="ess">
+        <div class="lab">Essenciais — não pode faltar no dia</div>
+        <div class="row">
+          <div class="chip"><div class="cbx"></div>💧 Beber 2L de água</div>
+          <div class="chip"><div class="cbx"></div>🏃 Fazer exercício</div>
+          <div class="chip"><div class="cbx"></div>📖 Ler pelo menos 10 min</div>
+        </div>
+      </div>
+
+      <div class="rt-note"><strong>⏰ Use despertadores:</strong> configure um alarme para cada transição de turno. Saber que o alarme vai tocar te libera de ficar olhando o relógio — você fica presente no que está fazendo e muda de atividade no momento certo.</div>
+
+      <div class="note">Dia corrido? Faça só os essenciais. Um dia mínimo bem feito vale mais que um dia perfeito que não acontece.</div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 1 · rotina</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA ROTINA EM BRANCO ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 1 · Em Branco</div>
+        <h2>Rotina do dia</h2>
+        <p>Monte sua rotina do zero. Preencha os horários e tarefas do seu jeito — as linhas em branco são todas suas.</p>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">☀️</span><h3>Manhã</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">🌤️</span><h3>Tarde</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="turno">
+        <div class="th"><span class="ic">🌙</span><h3>Noite</h3><span class="ln"></span></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="horário e tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="ritem"><input class="hr-in" type="time"><input class="tx-in" type="text" placeholder="adicione sua tarefa..."><button class="btn-rm-rt" onclick="this.closest('.ritem').remove()">×</button></div>
+        <div class="add-rt"><button onclick="addRotina(this)">+ adicionar horário</button></div>
+      </div>
+
+      <div class="ess">
+        <div class="lab">Essenciais — não pode faltar no dia</div>
+        <div class="row">
+          <div class="chip"><div class="cbx"></div>💧 Beber 2L de água</div>
+          <div class="chip"><div class="cbx"></div>🏃 Fazer exercício</div>
+          <div class="chip"><div class="cbx"></div>📖 Ler pelo menos 10 min</div>
+        </div>
+      </div>
+
+      <div class="note">Dia corrido? Faça só os essenciais. Um dia mínimo bem feito vale mais que um dia perfeito que não acontece.</div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 1 · rotina</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 4 — PERSONALIZE ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 3</div>
+        <h2>Personalize a sua semana</h2>
+        <p>Cada casa tem seu ritmo. Escreva aqui as tarefas do seu jeito e marque conforme conquista o dia.</p>
+      </div>
+
+      <div class="bday">
+        <div class="dh"><div class="nm">Segunda</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Terça</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Quarta</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Quinta</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Sexta</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Sábado</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+      <div class="bday">
+        <div class="dh"><div class="nm">Domingo · dia leve</div><div class="tot">total: ____ min</div></div>
+        <div class="bday-cols">
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+          <div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div><div class="bln"><div class="cbx"></div><div class="ln"></div></div></div>
+        </div>
+      </div>
+
+      <div class="funil">
+        <div class="fl">a versão viva</div>
+        <h3>E se a casa <em>se organizasse sozinha?</em></h3>
+        <p>O VidaFlor soma seus minutos, repete o cronograma toda semana e faz sua casa florescer a cada tarefa cumprida — rotina, finanças, saúde e família num só lugar.</p>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 3 · sua semana</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 5 — REFEIÇÕES ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 4</div>
+        <h2>Planejamento de refeições</h2>
+        <p>Decida com antecedência o que vai servir — chega de 17h sem saber o que tem pra jantar.</p>
+      </div>
+      <table class="meal-table">
+        <thead><tr><th class="day-col">Dia</th><th>☕ Café</th><th>🍽️ Almoço</th><th>🌙 Jantar</th><th class="obs-col">Obs</th></tr></thead>
+        <tbody>
+          <tr><td class="day-col">Segunda</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Terça</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Quarta</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Quinta</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Sexta</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Sábado</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+          <tr><td class="day-col">Domingo</td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td><td><span class="meal-line"></span></td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:16px;">💡 Planeje no domingo — ganha tempo, economiza dinheiro e evita desperdício.</div>
+
+      <div class="ingr-sec">
+        <div class="ingr-head">🛒 Ingredientes principais da semana</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin-top:8px;">
+          <div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+          </div>
+          <div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+            <div class="ingr-line"><div class="cbx"></div><div class="il"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:1;border:1px solid var(--line);border-radius:11px;padding:11px 14px 10px;margin-top:12px;display:flex;flex-direction:column;gap:3px;break-inside:avoid;">
+        <div style="font-size:12.5px;font-weight:800;color:var(--rose-d);letter-spacing:.3px;margin-bottom:5px;">📝 Observações da semana</div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 4 · refeições</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 6 — COMPRAS ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 5</div>
+        <h2>Lista de compras</h2>
+        <p>Organizada por categoria pra ir ao mercado com clareza e sair sem esquecer nada.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 20px;">
+        <div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🥦</span><h4>Hortifrúti</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🥩</span><h4>Carnes</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🧊</span><h4>Congelados</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🛒</span><h4>Mercearia</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🧴</span><h4>Limpeza &amp; Higiene</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+          <div class="shop-section">
+            <div class="sh"><span class="ic">🧁</span><h4>Padaria &amp; Extras</h4><span class="ln"></span></div>
+            <div class="shop-grid">
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+              <div class="shop-item"><div class="cbx"></div><span class="sn"><span class="meal-line"></span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1;border:1px solid var(--line);border-radius:11px;padding:10px 14px;margin-top:10px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;color:var(--rose-d);letter-spacing:.3px;margin-bottom:4px;">📝 Extras &amp; Outros</div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+        <div class="bln"><div class="cbx"></div><div class="ln"></div></div>
+      </div>
+      <div class="receita-sec" style="margin-top:10px;">
+        <div class="rs-header"><span class="ic">👨‍🍳</span><h4>Anotar ingredientes para receita especial</h4></div>
+        <div class="rs-nome">Receita: <input class="rs-inp" type="text" placeholder="escreva o nome da receita..."></div>
+        <div class="rs-grid">
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+          <div class="rs-line"><div class="cbx"></div><div class="rl"></div></div>
+        </div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 5 · compras</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 7 — FINANÇAS ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 6</div>
+        <h2>Controle financeiro da casa</h2>
+        <p>Um registro simples do mês — sem planilha complexa, só o que importa pra fechar as contas.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <div class="fin-block">
+            <div class="fh entrada">💚 Entradas do mês</div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row" style="background:var(--alt);"><div class="cbx"></div><div class="fl" style="font-weight:800;">Total entradas</div><div class="fv"></div></div>
+          </div>
+          <div class="fin-block">
+            <div class="fh fixo">🏠 Contas fixas</div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row" style="background:var(--alt);"><div class="cbx"></div><div class="fl" style="font-weight:800;">Total fixas</div><div class="fv"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="fin-block">
+            <div class="fh gasto">🛒 Gastos variáveis</div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row"><div class="cbx"></div><div class="fl"></div><div class="fv"></div></div>
+            <div class="fin-row" style="background:var(--alt);"><div class="cbx"></div><div class="fl" style="font-weight:800;">Total variáveis</div><div class="fv"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="fin-saldo">
+        <div><span>Total gastos</span><br><strong>R$ _______</strong></div>
+        <div><span>Saldo do mês</span><br><strong>R$ _______</strong></div>
+      </div>
+      <div class="note" style="margin-top:12px;">No VidaFlor, as contas fecham sozinhas — você só vê o resultado. <em>Conheça o app.</em></div>
+
+      <div class="cc-block" style="flex:1;">
+        <div class="ccard-title">💳 Controle de cartão de crédito</div>
+        <table class="cc-table">
+          <thead>
+            <tr><th style="width:60px;">Semana</th><th>Descrição / Compra</th><th style="width:72px;">Valor</th><th style="width:34px;">✔</th></tr>
+          </thead>
+          <tbody>
+            <tr class="cc-wk"><td colspan="4">Semana 1</td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr class="cc-wk"><td colspan="4">Semana 2</td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr class="cc-wk"><td colspan="4">Semana 3</td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr class="cc-wk"><td colspan="4">Semana 4</td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+            <tr><td></td><td></td><td></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 6 · finanças</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 8 — MANUTENÇÃO ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 7</div>
+        <h2>Checklist de manutenção</h2>
+        <p>As tarefas que todo mundo adia — com data e observação pra nenhuma passar em branco.</p>
+      </div>
+      <div class="maint-period"><span class="mp-label">Mensal — todo mês</span><span class="mp-line"></span></div>
+      <div class="maint-grid">
+        <div class="maint-card"><div class="mc-h"><span class="ic">🧊</span><h4>Limpar geladeira</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🗄️</span><h4>Organizar armários</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">💨</span><h4>Limpar ventiladores</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🪟</span><h4>Limpar janelas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">💡</span><h4>Verificar lâmpadas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🥫</span><h4>Revisar despensa</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🚿</span><h4>Checar filtros de água</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🌿</span><h4>Cuidar das plantas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔧</span><h4>Verificar caixa d'água</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔥</span><h4>Limpar fogão a fundo</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🧹</span><h4>Lavar tapetes / carpetes</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">📦</span><h4>Outro</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+      </div>
+      <div class="maint-period"><span class="mp-label">Trimestral — a cada 3 meses</span><span class="mp-line"></span></div>
+      <div class="maint-grid">
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔌</span><h4>Limpar coifa / exaustor</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🪟</span><h4>Lavar cortinas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🏠</span><h4>Limpar atrás dos eletrodomésticos</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🧊</span><h4>Descongelar freezer</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🛁</span><h4>Limpar azulejos e rejunte</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🪴</span><h4>Adubar e replanejar plantas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔦</span><h4>Verificar pilhas e baterias de emergência</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">📦</span><h4>Organizar depósito / área de serviço</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🧺</span><h4>Lavar cobertores e edredons</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">📋</span><h4>Outro</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+      </div>
+
+      <div class="maint-period"><span class="mp-label">Semestral — a cada 6 meses</span><span class="mp-line"></span></div>
+      <div class="maint-grid">
+        <div class="maint-card"><div class="mc-h"><span class="ic">⚡</span><h4>Revisar instalação elétrica</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔧</span><h4>Verificar vazamentos de água</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🏚️</span><h4>Checar telhado e calhas</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🪲</span><h4>Desinsetizar a casa</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">💧</span><h4>Lavar caixa d'água</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔑</span><h4>Lubrificar travas e fechaduras</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🔥</span><h4>Checar extintor de incêndio</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">📄</span><h4>Revisar documentos e contratos</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">🎨</span><h4>Inspecionar pintura e paredes</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+        <div class="maint-card"><div class="mc-h"><span class="ic">📋</span><h4>Outro</h4><div class="cbx"></div></div><div class="obs"></div><div class="dt">Data: ___/___/______</div></div>
+      </div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 7 · manutenção</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 9 — DESTRALHE ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 8</div>
+        <h2>Destralhe &amp; desapego</h2>
+        <p>Casa leve é casa respirando. Vá cômodo por cômodo e decida o destino de cada item parado.</p>
+      </div>
+      <table class="detox-table">
+        <thead>
+          <tr>
+            <th style="width:90px;">Ambiente</th>
+            <th>Item a avaliar</th>
+            <th style="width:75px;">Doar</th>
+            <th style="width:75px;">Descartar</th>
+            <th style="width:75px;">Vender</th>
+            <th style="width:75px;">Manter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="amb">Quarto</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Quarto</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Cozinha</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Cozinha</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Sala</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Sala</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Banheiro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Garagem</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:14px;">✨ Desafio: escolha um cômodo por semana. Em 30 dias a casa respira diferente.</div>
+      <div class="detox-footer">O tempo de anunciar, negociar e entregar cada peça raramente compensa o valor recebido. Para itens de baixo valor — <strong>doe sem culpa</strong>. Seu ganho real está no <strong>espaço recuperado</strong> e na leveza que a casa organizada traz — não nos reais contados. Casa leve vale mais do que qualquer venda.</div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 8 · destralhe</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA DESTRALHE COM EXEMPLOS ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 8 · Guia de Exemplos</div>
+        <h2>Destralhe &amp; <em style="color:var(--champ)">desapego</em></h2>
+        <p>Exemplos práticos pra despertar o olhar. Use como gatilho — avalie cada item e decida seu destino.</p>
+      </div>
+      <table class="detox-table">
+        <thead>
+          <tr>
+            <th style="width:90px;">Ambiente</th>
+            <th>Item a avaliar</th>
+            <th style="width:75px;">Doar</th>
+            <th style="width:75px;">Descartar</th>
+            <th style="width:75px;">Vender</th>
+            <th style="width:75px;">Manter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="amb">Quarto</td><td>Colchas que comprei na praia e só ficam guardadas (doar ou usar no sofá?)</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Quarto</td><td>Mais de 7 lençóis para apenas 2 camas — posso doar alguns?</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Sala</td><td>Puff antigo ou espelho de mão guardado — usar na decoração ou descartar?</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Cozinha</td><td>Potes plásticos sem tampa, manchados ou eletrodomésticos nunca usados</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Banheiro</td><td>Cosméticos vencidos, remédios antigos ou amostras grátis acumuladas</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Garagem</td><td>Ferramentas duplicadas ou caixas de papelão vazias guardadas "por garantia"</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td>Roupas que não servem há mais de um ano ou sapatos desconfortáveis</td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+          <tr><td class="amb">Outro</td><td></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td><td><div class="cbx" style="margin:auto;"></div></td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:14px;">✨ Desafio: escolha um cômodo por semana. Em 30 dias a casa respira diferente.</div>
+      <div class="detox-footer">O tempo de anunciar, negociar e entregar cada peça raramente compensa o valor recebido. Para itens de baixo valor — <strong>doe sem culpa</strong>. Seu ganho real está no <strong>espaço recuperado</strong> e na leveza que a casa organizada traz — não nos reais contados. Casa leve vale mais do que qualquer venda.</div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 8 · destralhe</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 10 — CONTATOS ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 9</div>
+        <h2>Contatos e informações da casa</h2>
+        <p>Tudo num só lugar — pra você e pra qualquer pessoa que precise cuidar da casa no seu lugar.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card"><div class="cc-h"><span class="ic">🚑</span><h4>Emergência familiar</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">👩‍⚕️</span><h4>Médico / Pediatra</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">🏫</span><h4>Escola</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">⛪</span><h4>Igreja / Comunidade</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">⚡</span><h4>Eletricista</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">🔧</span><h4>Encanador</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">🔑</span><h4>Chaveiro</h4></div><div class="cf"></div><div class="cf"></div></div>
+        <div class="contact-card"><div class="cc-h"><span class="ic">📺</span><h4>Assistência técnica</h4></div><div class="cf"></div><div class="cf"></div></div>
+      </div>
+      <div class="doc-block">
+        <div class="db-h">📁 Localização de documentos importantes</div>
+        <div class="doc-row"><div class="dr-l">RG / CPF</div><div class="dr-v"></div></div>
+        <div class="doc-row"><div class="dr-l">Escritura / contrato</div><div class="dr-v"></div></div>
+        <div class="doc-row"><div class="dr-l">Carteira de vacinação</div><div class="dr-v"></div></div>
+        <div class="doc-row"><div class="dr-l">Apólice de seguro</div><div class="dr-v"></div></div>
+        <div class="doc-row"><div class="dr-l">Garantias de eletrodomésticos</div><div class="dr-v"></div></div>
+      </div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 9 · contatos</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 11 — HÁBITOS ░░░ -->
+    <section class="page">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Parte 10</div>
+        <h2>Tracker de hábitos da família</h2>
+        <p>Constância é o que transforma intenção em resultado. Marque cada dia que cumprir.</p>
+      </div>
+      <table class="habit-table">
+        <thead>
+          <tr>
+            <th class="hab-col">Hábito</th>
+            <th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th><th>Dom</th>
+            <th style="min-width:40px;">✔️</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="hab-name">💧 Beber 2L de água</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">🙏 Oração / devocional</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">📖 Leitura 10 min</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">🏃 Exercício físico</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">🛏️ Arrumar a cama</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">🧹 Organizar cozinha</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">👨‍👩‍👧 Tempo em família</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name">🌙 Dormir até 23h</td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+          <tr><td class="hab-name" style="border-bottom:1px dotted var(--line);height:28px;"></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td><span class="hcbx"></span></td><td></td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:16px;">No VidaFlor, a flor floresce a cada hábito cumprido — progresso real, sem vício vazio. <em>🌸</em></div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 parte 10 · hábitos</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA BÔNUS — DIA ESSENCIAL ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;">
+      <div class="brandline"></div>
+      <div class="head">
+        <div class="eyebrow">Bônus · Rotina</div>
+        <h2>Dia <em style="color:var(--rose)">Essencial</em></h2>
+        <p>Para quando a vida fica grande demais. Aqui está a sua âncora.</p>
+      </div>
+
+      <div class="essential-intro">
+        Crie um dia para aqueles dias de <em>TPM, vida corrida, filho doente</em> ou imprevistos que acontecem. Somente para manter a vida fluindo e deixar o principal sendo feito e não esquecido.<br><br>
+        Tudo bem, nem todos os dias são perfeitos. Hoje você pode simplesmente <em>se amar</em> e manter as coisas funcionando.
+      </div>
+
+      <div class="essential-list">
+        <div class="essential-item"><div class="cbx"></div><div class="eem">🗑️</div><div class="etx">Tirar os lixos</div></div>
+        <div class="essential-item alt"><div class="cbx"></div><div class="eem">🍽️</div><div class="etx">Lavar a louça</div></div>
+        <div class="essential-item"><div class="cbx"></div><div class="eem">📦</div><div class="etx">Guardar as bagunças</div></div>
+        <div class="essential-item alt"><div class="cbx"></div><div class="eem">🧹</div><div class="etx">Varrer a casa</div></div>
+        <div class="essential-item"><div class="cbx"></div><div class="eem">🌙</div><div class="etx">Dormir mais cedo</div></div>
+        <div class="essential-item alt"><div class="cbx"></div><div class="eem">💧</div><div class="etx">Beber mais água</div></div>
+      </div>
+
+      <div class="essential-blanks" style="flex:1;">
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+        <div class="essential-blank"><div class="cbx"></div><div class="ebl"></div></div>
+      </div>
+
+      <div class="essential-close" style="margin-top:auto;">E amanhã? As coisas continuam.</div>
+
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 bônus · dia essencial</span></div>
+    </section>
+
+    <!-- ░░░ PÁGINA 12 — CTA FINAL ░░░ -->
+    <section class="page" style="display:flex;flex-direction:column;justify-content:center;">
+      <div class="brandline"></div>
+      <div style="text-align:center;padding:20mm 10mm;">
+        <svg width="64" height="64" viewBox="0 0 58 58" fill="none" style="margin:0 auto 16px;">
+          <path d="M29 52V20" stroke="#B8607A" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M29 30C24 28 18 30 15 35C21 37 27 35 29 30Z" fill="#E8B0BE"/>
+          <path d="M29 30C34 28 40 30 43 35C37 37 31 35 29 30Z" fill="#E89472" opacity=".85"/>
+          <path d="M29 22C26 18 27 12 31 9C33 14 32 19 29 22Z" fill="#D9B872"/>
+          <circle cx="29" cy="20" r="3.4" fill="#B8607A"/>
+        </svg>
+        <div class="eyebrow" style="margin-bottom:12px;">VidaFlor · Com Propósito</div>
+        <h2 style="font-family:var(--serif);font-size:42px;font-weight:500;letter-spacing:-.5px;line-height:1.1;margin-bottom:14px;">
+          Você chegou até aqui.<br><em style="font-style:italic;color:var(--rose);">Isso já é florescer.</em>
+        </h2>
+        <p style="font-size:15px;color:var(--muted);max-width:400px;margin:0 auto 30px;line-height:1.65;">
+          Este kit tem <strong>10 seções</strong> pra organizar limpeza, rotina, refeições, compras, finanças, manutenção, destralhe, contatos e hábitos da família — tudo imprimível, do seu jeito, no seu ritmo.
+        </p>
+        <div class="rule" style="margin:0 auto 30px;"></div>
+        <div style="background:var(--ink);color:#FBEFE6;border-radius:18px;padding:24px 32px;display:inline-block;max-width:440px;position:relative;overflow:hidden;">
+          <div style="position:absolute;right:-20px;top:-20px;width:100px;height:100px;background:var(--grad);border-radius:50%;opacity:.4;filter:blur(8px);"></div>
+          <div style="font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#F4C9A8;font-weight:800;position:relative;">a versão que não para</div>
+          <h3 style="font-family:var(--serif);font-size:26px;font-weight:500;margin:8px 0 10px;position:relative;">E se a casa <em style="color:#F0B89B;">florescesse</em> sozinha?</h3>
+          <p style="font-size:13.5px;color:#E6D2C8;line-height:1.6;position:relative;">O VidaFlor marca progresso, repete o cronograma toda semana, fecha as contas do mês e faz a flor crescer a cada tarefa cumprida — rotina, finanças, saúde e família num só lugar.</p>
+          <div style="margin-top:16px;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#D9B872;position:relative;">🌸 vidaflor.com.br</div>
+        </div>
+      </div>
+      <div class="footer"><span>vidaflor · com propósito</span><span class="flor">🌸 kit casa organizada</span></div>
+    </section>
+
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

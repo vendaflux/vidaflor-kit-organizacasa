@@ -1,0 +1,390 @@
+/* ════════════════════════════════════════════════════════════════
+   Kit Casa Organizada · VidaFlor — CAMADA APP
+   Não substitui styles.css. Adiciona: toolbar, navegação, layout
+   mobile (tela) e estados editável/marcado. O @media print original
+   continua valendo para o PDF.
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  --vf-bar-h: 54px;
+}
+
+/* esconde a barra antiga de instrução de PDF */
+.bar.legacy { display: none !important; }
+
+/* ── Toolbar do app ─────────────────────────────────────────── */
+.vf-bar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: var(--vf-bar-h);
+  padding: 0 12px;
+  background: rgba(42, 26, 34, .96);
+  color: #FBEFE6;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 14px rgba(42, 26, 34, .25);
+}
+
+.vf-bar .vf-title {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.vf-bar .vf-title small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F4C9A8;
+  font-weight: 800;
+  margin-top: -2px;
+}
+
+.vf-iconbtn {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 11px;
+  background: rgba(251, 239, 230, .12);
+  color: #FBEFE6;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background .15s ease, transform .12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.vf-iconbtn:hover { background: rgba(251, 239, 230, .22); }
+.vf-iconbtn:active { transform: scale(.93); }
+
+.vf-saved {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: #9FE0C8;
+  opacity: 0;
+  transition: opacity .25s ease;
+  white-space: nowrap;
+}
+.vf-saved.show { opacity: 1; }
+
+/* ── Menu de ações (dropdown) ───────────────────────────────── */
+.vf-menu-wrap { position: relative; flex: none; }
+.vf-dropdown {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  min-width: 220px;
+  background: #FFFBF6;
+  color: var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 18px 50px rgba(42, 26, 34, .32);
+  padding: 6px;
+  display: none;
+  overflow: hidden;
+}
+.vf-dropdown.open { display: block; }
+.vf-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 11px 13px;
+  border: none;
+  background: none;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: left;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.vf-dropdown button:hover { background: var(--alt); }
+.vf-dropdown button .mi { font-size: 17px; width: 22px; text-align: center; }
+.vf-dropdown button.danger { color: #B23A48; }
+.vf-dropdown hr { border: none; border-top: 1px solid var(--line-soft); margin: 4px 6px; }
+
+/* ── Drawer de navegação (seções) ───────────────────────────── */
+.vf-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 26, 34, .5);
+  backdrop-filter: blur(2px);
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease;
+}
+.vf-scrim.open { opacity: 1; pointer-events: auto; }
+
+.vf-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: min(82vw, 320px);
+  background: #FFFBF6;
+  z-index: 310;
+  box-shadow: 6px 0 40px rgba(42, 26, 34, .3);
+  transform: translateX(-104%);
+  transition: transform .26s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top, 0);
+}
+.vf-drawer.open { transform: translateX(0); }
+
+.vf-drawer .dh {
+  padding: 20px 20px 14px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.vf-drawer .dh .et {
+  font-size: 10.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rose);
+  font-weight: 800;
+}
+.vf-drawer .dh h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 3px;
+}
+.vf-navlist {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+.vf-navlist a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+.vf-navlist a:hover { background: var(--alt); }
+.vf-navlist a .nidx {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--alt);
+  color: var(--rose-d);
+  font-size: 11.5px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Banner iOS (Adicionar à tela de início) ────────────────── */
+.vf-ios-hint {
+  display: none;
+  margin: 10px auto 0;
+  max-width: 560px;
+  width: calc(100% - 28px);
+  background: #FFFBF6;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 13px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(42, 26, 34, .12);
+}
+.vf-ios-hint.show { display: block; }
+.vf-ios-hint b { color: var(--rose-d); }
+.vf-ios-hint button {
+  margin-top: 8px;
+  border: none;
+  background: var(--alt);
+  color: var(--rose-d);
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+/* ════════════════════════════════════════════════════════════
+   ESTADOS EDITÁVEIS / MARCADOS (modo tela)
+   ════════════════════════════════════════════════════════════ */
+@media screen {
+  /* Campos de texto editáveis */
+  .vf-edit {
+    cursor: text;
+    border-radius: 4px;
+    transition: background .12s ease, box-shadow .12s ease;
+    min-height: 1.15em;
+    outline: none;
+  }
+  .vf-edit:hover { background: rgba(217, 184, 114, .10); }
+  .vf-edit:focus {
+    background: rgba(232, 176, 190, .20);
+    box-shadow: 0 0 0 2px var(--rose-l);
+  }
+  /* dá área de toque confortável para as "linhas" finas no celular */
+  .vf-line {
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Checkboxes clicáveis */
+  .cbx, .hcbx {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: background .12s ease, border-color .12s ease, transform .1s ease;
+    position: relative;
+  }
+  .cbx:active, .hcbx:active { transform: scale(.88); }
+
+  .cbx.is-checked {
+    background: var(--grad);
+    border-color: var(--rose);
+  }
+  .cbx.is-checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 4.5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2.4px 2.4px 0;
+    transform: rotate(43deg);
+  }
+  .hcbx.is-checked {
+    background: var(--grad);
+    border-color: var(--rose);
+  }
+  .hcbx.is-checked::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2.2px 2.2px 0;
+    transform: translate(-55%, -55%) rotate(43deg);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   LAYOUT MOBILE (apenas tela) — o A4 fixo vira fluido
+   ════════════════════════════════════════════════════════════ */
+@media screen and (max-width: 820px) {
+  body { background: #E9DED4; }
+
+  .sheet {
+    padding: 14px 0 70px;
+    gap: 16px;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 640px;
+    min-height: auto;
+    padding: 26px 18px 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(42, 26, 34, .14);
+  }
+
+  /* rodapé deixa de ser absoluto (a página agora tem altura variável) */
+  .footer {
+    position: static;
+    left: auto; right: auto; bottom: auto;
+    margin-top: 26px;
+  }
+
+  /* capa: tipografia proporcional ao celular */
+  .cover { min-height: 70vh; }
+  .cover h1 { font-size: 40px; }
+  .cover .sub { font-size: 15px; }
+
+  /* grids de 2 colunas (inline) viram 1 coluna no celular */
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .day-2col { grid-template-columns: 1fr !important; }
+  .bday-cols { grid-template-columns: 1fr !important; }
+  .contact-grid { grid-template-columns: 1fr 1fr !important; }
+  .maint-grid { grid-template-columns: 1fr !important; }
+
+  /* tabelas largas rolam na horizontal dentro de um wrapper (criado via JS) */
+  .vf-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -4px;
+    padding-bottom: 4px;
+  }
+  .vf-scroll > table { min-width: 540px; }
+  .habit-table { min-width: 600px; }
+
+  /* inputs da rotina: alvos de toque maiores */
+  .ritem { flex-wrap: wrap; }
+  .ritem .hr-in { font-size: 15px; padding: 7px 8px; }
+  .ritem .tx-in { font-size: 15px; padding: 7px 10px; min-width: 0; }
+  .add-rt button { padding: 9px 14px; font-size: 13px; }
+
+  .index { max-width: 100%; }
+}
+
+@media screen and (max-width: 420px) {
+  .cover h1 { font-size: 33px; }
+  .contact-grid { grid-template-columns: 1fr !important; }
+  .vf-bar .vf-title { font-size: 15px; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   IMPRESSÃO — esconder a UI do app; o resto do print.css original vale
+   ════════════════════════════════════════════════════════════ */
+@media print {
+  .vf-bar, .vf-drawer, .vf-scrim, .vf-dropdown,
+  .vf-ios-hint, .no-print, .add-rt, .btn-rm-rt {
+    display: none !important;
+  }
+  /* desfaz o wrapper de scroll na impressão */
+  .vf-scroll { overflow: visible !important; margin: 0 !important; }
+  .vf-scroll > table, .habit-table { min-width: 0 !important; }
+  /* checkboxes marcados aparecem preenchidos no PDF */
+  .cbx.is-checked { background: var(--rose) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cbx.is-checked::after {
+    content: ""; position: absolute; left: 5px; top: 1px;
+    width: 4.5px; height: 9px; border: solid #fff;
+    border-width: 0 2.4px 2.4px 0; transform: rotate(43deg);
+  }
+  .hcbx.is-checked { background: var(--rose) !important; }
+  .hcbx.is-checked::after {
+    content: ""; position: absolute; left: 50%; top: 47%;
+    width: 4px; height: 8px; border: solid #fff;
+    border-width: 0 2.2px 2.2px 0; transform: translate(-55%,-55%) rotate(43deg);
+  }
+  .vf-edit:focus { box-shadow: none !important; background: none !important; }
+}
+
+/* offset para a barra fixa ao navegar pelas seções */
+.page { scroll-margin-top: 64px; }
